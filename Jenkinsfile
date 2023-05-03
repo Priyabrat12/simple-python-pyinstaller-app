@@ -15,7 +15,7 @@ pipeline {
             post {
                 always {
                     junit 'skipPublishingChecks: true, test-reports/results.xml'
-                    sh "cat /var/lib/jenkins/workspace/simple-python-pyinstaller-app/test-reports/results.xml'
+                    sh 'cat /var/lib/jenkins/workspace/simple-python-pyinstaller-app/test-reports/results.xml'
                 }
             }
         }
